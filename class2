@@ -1,0 +1,18 @@
+class Foo{
+  constructor(who){
+    this.me = who;
+  }
+}
+
+class Bar extends Foo{
+
+  constructor(who){
+    super(who);
+    this.x =1;
+    console.log(this.x);
+  }
+}
+
+var t = new Bar("A");
+
+// super muct come first when use this 
